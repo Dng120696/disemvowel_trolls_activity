@@ -5,9 +5,11 @@
 # Your task is to write a method that takes a string and return a new string with all vowels removed.
 
 #using reject and join method
-def remove_vowels(str_el)
-  vowels =['a','e','i','o','u','A','E','I','O','U']
+def vowels
+  ['a','e','i','o','u','A','E','I','O','U']
+end
 
+def remove_vowels(str_el)
   new_str = str_el.split('').reject { |str| vowels.include?(str)}.join
 
   new_str
@@ -16,7 +18,6 @@ p remove_vowels('This website is for loser LOL!')
 
 #using each, include and join method
 def remove_vowels(str_el)
-  vowels =['a','e','i','o','u','A','E','I','O','U']
   new_str = []
   arr_str = str_el.split('')
 
@@ -29,7 +30,6 @@ p remove_vowels('This website is for loser LOL!')
 
 # using each and join method
 def remove_vowels(str_el)
-  vowels =['a','e','i','o','u','A','E','I','O','U']
   new_str = []
   arr_str = str_el.split('')
 
